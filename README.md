@@ -1,4 +1,9 @@
-# Sistem Manajemen Produk - README
+## Anggota Kelompok
+- Pryta Rosela (2208107010046)
+- Widya Nurul Sukma (2208107010054)
+- Mila Lestari (2208107010002)
+
+# Sistem Manajemen Produk
 
 ## Deskripsi Proyek
 Proyek ini adalah sistem manajemen produk sederhana yang dibangun menggunakan Django. Sistem ini memungkinkan pengguna untuk melakukan operasi CRUD (Create, Read, Update, Delete) pada data produk.
@@ -19,8 +24,8 @@ Proyek ini adalah sistem manajemen produk sederhana yang dibangun menggunakan Dj
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/username/manajemen-produk.git
-cd manajemen-produk
+git clone https://github.com/WidyaNurulSukma/Tugas8_Kelompok8.git
+cd Tugas8_Kelompok8
 ```
 
 ### 2. Buat Virtual Environment
@@ -125,25 +130,11 @@ Sistem menggunakan function-based views untuk operasi CRUD:
 ### Flash Messages
 Sistem menggunakan Django messages framework untuk menampilkan notifikasi ketika operasi berhasil dilakukan.
 
-## Fitur Tambahan (Opsional)
-Beberapa fitur yang bisa ditambahkan untuk pengembangan lebih lanjut:
-1. Fitur pencarian produk
-2. Kategori produk
-3. Paginasi untuk daftar produk
-4. Upload gambar produk
-5. Autentikasi pengguna
-
-## Kontribusi
-Jika ingin berkontribusi pada proyek ini:
-1. Fork repository
-2. Buat branch baru (`git checkout -b fitur-baru`)
-3. Commit perubahan (`git commit -m 'Menambahkan fitur baru'`)
-4. Push ke branch (`git push origin fitur-baru`)
-5. Buat Pull Request
+## Tampilan Website
+![image](https://github.com/user-attachments/assets/d1627473-af5a-49fd-be56-205bf2ad6e2b)
+![image](https://github.com/user-attachments/assets/d5d4250e-df99-4715-9052-387543e54c28)
 
 ## Lisensi
 [MIT License](LICENSE)
 
-## Kontak
-Email: email@example.com
-GitHub: [username](https://github.com/username)
+GitHub: [username](https://github.com/WidyaNurulSukma)
