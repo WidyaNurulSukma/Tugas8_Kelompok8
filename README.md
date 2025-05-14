@@ -137,4 +137,4 @@ Sistem menggunakan Django messages framework untuk menampilkan notifikasi ketika
 ## Lisensi
 [MIT License](LICENSE)
 
-GitHub: [username](https://github.com/WidyaNurulSukma)
+GitHub: [WidyaNurulSukma](https://github.com/WidyaNurulSukma)
