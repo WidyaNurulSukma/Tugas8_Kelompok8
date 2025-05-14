@@ -1,0 +1,39 @@
+{% extends 'produk/base.html' %}
+
+{% block title %}Daftar Produk{% endblock %}
+
+{% block content %}
+    <h1>Daftar Produk</h1>
+    <a href="{% url 'produk:create' %}" class="btn btn-primary mb-3">Tambah Produk</a>
+
+    {% if produk %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Harga</th>
+                    <th>Stok</th>
+                    <th>Tanggal Input</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in produk %}
+                    <tr>
+                        <td>{{ item.nama }}</td>
+                        <td>Rp {{ item.harga }}</td>
+                        <td>{{ item.stok }}</td>
+                        <td>{{ item.tanggal_input|date:"d M Y H:i" }}</td>
+                        <td>
+                            <a href="{% url 'produk:detail' item.pk %}" class="btn btn-info btn-sm">Detail</a>
+                            <a href="{% url 'produk:update' item.pk %}" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="{% url 'produk:delete' item.pk %}" class="btn btn-danger btn-sm">Hapus</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class="alert alert-info">Belum ada produk yang ditambahkan.</div>
+    {% endif %}
+{% endblock %}

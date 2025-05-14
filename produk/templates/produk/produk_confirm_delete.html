@@ -1,0 +1,15 @@
+{% extends 'produk/base.html' %}
+
+{% block title %}Hapus Produk{% endblock %}
+
+{% block content %}
+    <h1>Hapus Produk</h1>
+    <div class="alert alert-danger">
+        Apakah Anda yakin ingin menghapus produk "{{ produk.nama }}"?
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Ya, Hapus</button>
+        <a href="{% url 'produk:list' %}" class="btn btn-secondary">Batal</a>
+    </form>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'produk/base.html' %}
+
+{% block title %}Detail Produk{% endblock %}
+
+{% block content %}
+    <h1>Detail Produk</h1>
+    <div class="card">
+        <div class="card-header">
+            {{ produk.nama }}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Harga: Rp {{ produk.harga }}</h5>
+            <p class="card-text">{{ produk.deskripsi }}</p>
+            <p class="card-text">Stok: {{ produk.stok }}</p>
+            <p class="card-text">Tanggal Input: {{ produk.tanggal_input|date:"d M Y H:i" }}</p>
+            <a href="{% url 'produk:update' produk.pk %}" class="btn btn-warning">Edit</a>
+            <a href="{% url 'produk:delete' produk.pk %}" class="btn btn-danger">Hapus</a>
+            <a href="{% url 'produk:list' %}" class="btn btn-secondary">Kembali</a>
+        </div>
+    </div>
+{% endblock %}
